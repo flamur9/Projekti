@@ -441,3 +441,138 @@ button:hover {
     border-bottom-right-radius:15px;
     border-bottom-left-radius: 15px;
 }
+.mainpage-boxing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(rgba(20,0,0,0.7),rgba(20,0,0,0.7)),url(boxingbackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;   
+    padding-top: 40px;
+}
+
+#kontentiBoxing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI light', Tahoma;
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+
+#kontentiBoxing img {
+    width: 1100px;
+    height: auto;
+    border: 2px solid rgb(180, 0, 0);
+    border-radius: 8px;
+    margin-top: 10px;
+    height: 500px;    
+}
+
+#kontentiBoxing img {
+    transition: opacity 0.5s ease; 
+}
+
+#kontentiBoxing img:hover{
+    cursor: pointer;
+}
+
+.mainpage-boxing .Titull1{
+    color: rgb(180, 0, 0);
+}
+
+.Boxingarrow{
+    color: rgb(180, 0, 0);
+}
+
+.Boxingarrow:hover{
+    background-color: black;
+    color: rgb(180, 0, 0);
+}
+
+.foto-lajmi10{
+    height: 200px;
+    border: 2px solid rgb(180, 0, 0);
+    border-radius: 15px;
+    display: flex;
+}
+
+.lajmi10{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.lajmi10:hover .foto-teksti10{
+    opacity: 1;
+    transition: 1s;
+    background-color: rgb(180, 0, 0);
+    height: 80px;
+    color: black;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius: 15px;
+}
+
+.foto-teksti10{
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    opacity: 0;
+    align-items: center;
+    height: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.foto-lajmi11, .foto-lajmi12, .foto-lajmi13{
+    height: 200px;
+    border: 2px solid rgb(180, 0, 0);
+    border-radius: 15px;
+    display: flex;
+}
+
+.lajmi11, .lajmi12,.lajmi13{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.foto-teksti11,.foto-teksti12, .foto-teksti13{
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    opacity: 0;
+    align-items: center;
+    height: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.lajmi11:hover .foto-teksti11, .lajmi12:hover .foto-teksti12,.lajmi13:hover .foto-teksti13{
+    opacity: 1;
+    transition: 1s;
+    background-color: rgb(180, 0, 0);
+    height: 80px;
+    color: black;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius: 15px;
+}
+
+.mainpage-boxing .small-images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 80px;
+    }
