@@ -89,3 +89,64 @@
                         </script>
         </div>
         </div>
+        <div class="basketball-page">
+            <div class="mainpage-basketball">
+                <div id="kontentiBasketball">
+                    <img id="slideshowBasketball" alt="Slideshow Image" />
+                    <div class="navigation">
+                        <button id="basketball-button" class="arrow-button" onclick="prevImgBasketball()">&#9664;</button>
+                        <button id="basketball-button" class="right-arrow" onclick="changeImgBasketball()">&#9654;</button>
+                    </div>
+                </div>
+                        <div class="Titull1">
+                        <b>TE FUNDIT</b>
+                        <hr style="height: 1px; width: 1400px;border: 1px solid rgb(207, 83, 0);background-color: rgb(207, 83, 0);">
+                        </div>
+                        <div class="small-images">
+                                <DIV class="lajmi6">
+                                    <img class="foto-lajmi6" src="basketballfoto4.jpg" alt="">
+                                    <div class="foto-teksti6"> <B>LEBRON NDIHMON NE FITOREN E LAKERS</B>	</div>
+                                </DIV>
+                                <DIV class="lajmi7">
+                                    <img class="foto-lajmi7" src="basketballfoto5.jpg" alt="">
+                                    <div class="foto-teksti7"> <B>ALL-STAR TEAM PER VITIN 2023</B></div>
+                                </DIV>
+                                <DIV class="lajmi8">
+                                    <img class="foto-lajmi8" src="basketballfoto6.jpg" alt="">
+                                    <div class="foto-teksti8"> <B>FINALET PER VITIN 2023</B> </div>
+                                </DIV>
+                                <DIV class="lajmi9">
+                                    <img class="foto-lajmi9" src="basketballfoto7.jpg" alt="">
+                                    <div class="foto-teksti9"> <B>GIANNIS ME ROL KRUCIAL NE EKIPIN E TIJ</B> </div>
+                                </DIV>   
+                                <script>
+                                    let iBasketball = 0;
+                                    const imgArrayBasketball = ['basketballfoto1.png', 'basketballfoto2.png', 'basketballfoto3.png'];
+                                    const slideshowImageBasketball = document.getElementById('slideshowBasketball');
+                    
+                                    function changeImgBasketball() {
+                                        iBasketball = (iBasketball + 1) % imgArrayBasketball.length;
+                                        slideshowImageBasketball.style.opacity = 0;
+                                        setTimeout(function () {
+                                            slideshowImageBasketball.src = imgArrayBasketball[iBasketball];
+                                            slideshowImageBasketball.style.opacity = 1;
+                                        }, 500); 
+                                    }
+                    
+                                    function prevImgBasketball() {
+                                        iBasketball = (iBasketball - 1 + imgArrayBasketball.length) % imgArrayBasketball.length;
+                                        slideshowImageBasketball.style.opacity = 0;
+                                        setTimeout(function () {
+                                            slideshowImageBasketball.src = imgArrayBasketball[iBasketball];
+                                            slideshowImageBasketball.style.opacity = 1;
+                                        }, 500); 
+                        };
+                
+                        window.addEventListener('load', function () {
+                    changeImgFootball();
+                    changeImgBasketball();
+                    changeImgBoxing();
+                });
+                            
+                                </script>   
+                </div>
