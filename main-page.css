@@ -312,3 +312,132 @@ button:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
 }
+.mainpage-basketball{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(basketballbackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;   
+    padding-top: 40px;
+}
+
+#basketball-button{
+    color: rgb(207, 83, 0);
+}
+
+#basketball-button:hover{
+    background-color: black;
+}
+
+#kontentiBasketball {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI light', Tahoma;
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+
+
+#kontentiBasketball img {
+    width: 1100px;
+    height: auto;
+    border: 2px solid rgb(207, 83, 0);
+    border-radius: 8px;
+    margin-top: 10px;
+    height: 500px;    
+}
+
+#kontentiBasketball img {
+    transition: opacity 0.5s ease; 
+}
+
+#kontentiBasketball img:hover{
+    cursor: pointer;
+}
+
+.mainpage-basketball .Titull1{
+    color: rgb(207, 83, 0);
+}
+
+.foto-lajmi6{
+    height: 200px;
+    border: 2px solid rgb(207, 83, 0);
+    border-radius: 15px;
+    display: flex;
+}
+
+.lajmi6{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.lajmi6:hover .foto-teksti6{
+    opacity: 1;
+    transition: 1s;
+    background-color: rgb(207, 83, 0);
+    height: 80px;
+    color: black;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius: 15px;
+}
+
+.foto-teksti6{
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    opacity: 0;
+    align-items: center;
+    height: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+
+
+.foto-lajmi7, .foto-lajmi8, .foto-lajmi9{
+    height: 200px;
+    border: 2px solid rgb(207, 83, 0);
+    border-radius: 15px;
+    display: flex;
+}
+
+.lajmi7, .lajmi8,.lajmi9{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.foto-teksti7,.foto-teksti8, .foto-teksti9{
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    opacity: 0;
+    align-items: center;
+    height: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.lajmi7:hover .foto-teksti7, .lajmi8:hover .foto-teksti8,.lajmi9:hover .foto-teksti9{
+    opacity: 1;
+    transition: 1s;
+    background-color: rgb(207, 83, 0);
+    height: 80px;
+    color: black;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius: 15px;
+}
