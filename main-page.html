@@ -150,3 +150,65 @@
                             
                                 </script>   
                 </div>
+                <div class="boxing-page">
+                    <div class="mainpage-boxing">
+                        <div id="kontentiBoxing">
+                            <img id="slideshowBoxing" alt="Slideshow Image" />
+                            <div class="navigation">
+                                <button class="Boxingarrow" onclick="prevImgBoxing()">&#9664;</button>
+                                <button class="Boxingarrow" onclick="changeImgBoxing()">&#9654;</button>
+                            </div>
+                        </div>
+            
+                        <script>
+                            let iBoxing = 0;
+                            const imgArrayBoxing = ['boxingfoto1.jpg', 'boxingfoto2.jpg', 'boxingfoto3.jpg'];
+                            const slideshowImageBoxing = document.getElementById('slideshowBoxing');
+            
+                            function changeImgBoxing() {
+                                iBoxing = (iBoxing + 1) % imgArrayBoxing.length;
+                                slideshowImageBoxing.style.opacity = 0;
+                                setTimeout(function () {
+                                    slideshowImageBoxing.src = imgArrayBoxing[iBoxing];
+                                    slideshowImageBoxing.style.opacity = 1;
+                                }, 500);
+                            }
+            
+                            function prevImgBoxing() {
+                                iBoxing = (iBoxing - 1 + imgArrayBoxing.length) % imgArrayBoxing.length;
+                                slideshowImageBoxing.style.opacity = 0;
+                                setTimeout(function () {
+                                    slideshowImageBoxing.src = imgArrayBoxing[iBoxing];
+                                    slideshowImageBoxing.style.opacity = 1;
+                                }, 500);
+                            }
+                        </script>
+            
+                        <div class="Titull1">
+                            <b>TE FUNDIT</b>
+                            <hr style="height: 1px; width: 1400px; border: 1px solid rgb(180, 0, 0); background-color: rgb(180, 0, 0);">
+                        </div>
+            
+                        <div class="small-images">
+                            <DIV class="lajmi10">
+                                <img class="foto-lajmi10" src="boxingfoto4.jpg" alt="">
+                                <div class="foto-teksti10"> <B>MAKHACHEV FITON KUNDER 'THE VOLK'</B> </div>
+                            </DIV>
+                            <DIV class="lajmi11">
+                                <img class="foto-lajmi11" src="boxingfoto5.jpg" alt="">
+                                <div class="foto-teksti11"> <B>MARKU, GATI PER SFIDEN E RADHES </B> </div>
+                            </DIV>
+                            <DIV class="lajmi12">
+                                <img class="foto-lajmi12" src="boxingfoto6.jpg" alt="">
+                                <div class="foto-teksti12"> <B>JOSHUA SFIDON TYSON FURYN</B> </div>
+                            </DIV>
+                            <DIV class="lajmi13">
+                                <img class="foto-lajmi13" src="boxingfoto7.jpg" alt="">
+                                <div class="foto-teksti13"> <B>JON JONES GATI PER RIKTHIM  </B> </div>
+                            </DIV>
+                        </div>
+                    </div>
+                </div>
+                </div>
+</body>
+</html>
