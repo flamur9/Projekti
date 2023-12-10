@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0,20,70);
+    height: 100px;
+    justify-content: space-between;
+}
+
+.text1{
+    display: flex;
+    flex-direction: row;
+    color:  white;
+}
+
+.text2{
+    display: flex;  
+    flex-direction: row;
+    color: white;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    .button0{
+        width: 90px;
+        height: 40px;
+        border: none; 
+        background-color: rgb(0,20,70);
+        color: white;
+        border-radius: 15px;
+        margin-left: 8px;
+        padding-left: 20px;
+        background-image: url(homeicon.png);
+        background-position: 5px;
+        background-repeat: no-repeat;
+        background-size: 25px;
+    }
+.button1,.button2{
+    height: 40px;
+    width: 100px;
+    border: none; 
+    background-color: rgb(0,20,70);
+    color: white;
+    border-radius: 15px;
+    margin-left: 8px;   
+}
+
+.button1{
+    background-image: url(About\ us.png);
+    background-position: 5px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 25px;
+    width: 120px;
+}
+
+.button2{
+    background-image: url(phone1.png); 
+    background-position: 5px ;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    margin-left: 8px;
+    width: 145px;
+    padding-left: 15px;
+}
+
+.button3{
+    height: 40px;
+    width: 100px;
+    border: none; 
+    background-color: rgb(0,20,70);
+    color: white;
+    border-radius: 15px;
+    margin-left: 8px;
+    padding-left: 25px;
+    background-image: url(login.png); 
+    background-position: 5px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.button1:hover, .button0:hover,.button2:hover,.button3:hover{
+    cursor: pointer;
+    background-color:  white ;
+    color: black;
+    border: none;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.searchbar{
+    margin-right: 50px;
+    margin-top: 5px;
+    margin-left: 8px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+       
+}
+
+.search{
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;
+    border: 1px solid blue;
+}
+
+.img1{
+    width: 170px;
+}
+/*======================================================Header finished========================================*/
+
+.mainpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,20,80,0.7),rgba(0,20,80,0.7)),url(footballbackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.news1{
+    display: flex;  
+    justify-content: center;
+}
+
+.news-section{
+    display: flex;
+    flex-direction: row;    
+}
+/*=======================================================slider start=================================================================*/
+.slider-button{
+    position: relative;
+    margin-top: -50px;
+    padding: 10px;
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    color: rgb(43, 45, 179);
+    cursor: pointer;
+}
+
+#kontentiFootball {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI light', Tahoma;
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+
+
+#kontentiFootball img {
+    width: 1100px;
+    height: auto;
+    border: 1px solid rgb(43, 45, 179) ;
+    border-radius: 8px;
+    margin-top: 10px;
+    height: 500px;    
+}
+
+#kontentiFootball img {
+    transition: opacity 0.5s ease; 
+}
+
+#kontentiFootball img:hover{
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent;
+    color: rgb(43, 45, 179);
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(43, 45, 179);
+    transition: 1s ease;
+}
+/*=======================================slider finished==============================================================================*/
+.football-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.foto1, .foto2, .foto3{
+    height: 200px;
+    display: flex;
+    margin-left: 20px;
+    flex-wrap: wrap ;
+    margin-top: 10px;
+}
+
+.small-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.Titull1{
+    display: flex;
+    color: rgb(43, 45, 179);
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+.foto-lajmi2{
+    height: 200px;
+    border: 2px solid rgb(43, 45, 179);
+    border-radius: 15px;
+    display: flex;
+}
+
+.lajmi2{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.lajmi2:hover .foto-teksti2{
+    opacity: 1;
+    transition: 1s;
+    background-color: rgb(43, 45, 179);
+    height: 80px;
+    color: white;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius: 15px;
+}
+
+.foto-teksti2{
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    opacity: 0;
+    align-items: center;
+    height: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+
+
+.foto-lajmi3, .foto-lajmi4, .foto-lajmi5{
+    height: 200px;
+    border: 2px solid rgb(43, 45, 179);
+    border-radius: 15px;
+    display: flex;
+}
+
+.lajmi3, .lajmi4,.lajmi5{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.lajmi3:hover .foto-teksti3, .lajmi4:hover .foto-teksti4,.lajmi5:hover .foto-teksti5{
+    opacity: 1;
+    transition: 1s;
+    background-color: rgb(43, 45, 179);
+    height: 80px;
+    color: white;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius: 15px;
+}
+
+.foto-teksti3,.foto-teksti4, .foto-teksti5{
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    opacity: 0;
+    align-items: center;
+    height: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
