@@ -9,6 +9,7 @@
     
 </head>
 <body>  
+    <?php
         <div>
         <div class="header">
                 <div class="text1">
@@ -210,5 +211,6 @@
                     </div>
                 </div>
                 </div>
+                ?>
 </body>
 </html>
