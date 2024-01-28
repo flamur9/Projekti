@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(dashboardbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.userprofile{
+    height: 100px;
+}
+
+.teksti{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.text1{
+    padding-bottom: 15px;
+    margin-left: 20px;
+}
+
+.userdashboard{
+    display: flex;
+    margin-top: 130px;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    flex-direction: column;
+    color: white;
+    border: 3px solid white;
+}
+
+.userdashboard .button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.Admin-button,.Signout-button1,.Signout-button{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.Signout-button1{
+    margin-left: 10px;
+}
+
+.Admin-button:hover,.Signout-button1:hover,.Signout-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 1s ease;
+}
+
+.buttonat2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.buttonat .buttonat2{
+    display: flex;
+    justify-content: space-between;
+}
+

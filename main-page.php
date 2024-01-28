@@ -1,34 +1,42 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
-    <link rel="stylesheet" href="main-page.css">
-    
+    <link rel="stylesheet" href="main-page.css?v=<?php echo time(); ?>" >
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     
 </head>
 <body>  
+    
+
+
         <div>
         <div class="header">
                 <div class="text1">
                     <img class="img1" src="logo3-PhotoRoom.png-PhotoRoom.png" alt="">
                 </div>
-        
                     <div class="header2">
                         <div class=" text2">
-                            <button class="button0"> <b>HOME</b> </button>
-                            <a href="about-us-page.html" target=" _blank"><button class="button1"> <b>ABOUT US</b> </button></a>
-                            <button class="button2"> <b>CONTACT US</b> </button>
-                            <a href="Sign-in-page.html" target="_blank"><button class="button3"> <b>SIGN IN</b> </button></a>
-        
+                     
+                        <a href="dashboard.php"><button class="button4" ><b>DASHBOARD</b></button></a>
+                        <button class="button0"> <b>HOME</b> </button>
+                            <a href="about-us-page.php" target=" _blank"><button class="button1"> <b>ABOUT US</b> </button></a>
+                            <a href="Contactus.php" target=" _blank" ><button class="button2"> <b>CONTACT US</b> </button></a>
+                            <a href="Sign-in-page.php" target="_blank"><button class="button3"> <b>SIGN IN</b> </button></a>
+                
+
                         <div class="searchbar" id="">
                                 <input class="search" type="text" name="" placeholder=" Search..." id="">
                         </div>
                     </div>
                 </div>
             </div>
-        
+                    
             </div>
         </div>
         <div class="football-page">
@@ -210,5 +218,9 @@
                     </div>
                 </div>
                 </div>
+        
+          
+                
+                
 </body>
 </html>

@@ -1,3 +1,62 @@
+<?php
+require_once 'dbconnect.php';
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get user input
+    $emri = $_POST["Emri"];
+    $mbiemri = $_POST["Mbiemri"];
+    $username = $_POST["Username"];
+    $password = $_POST["Password"];
+
+    // Validate user input
+    if (empty($emri) || empty($mbiemri) || empty($username) || empty($password)) {
+        echo "All fields are required.";
+        exit;
+    }
+
+    // Determine the user's role based on a condition (e.g., user with ID 7 is an admin)
+    $roli = ($username == 'ab12345@ubt-uni.net') ? 'admin' : 'user';
+
+    // Hash the password
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+    // Prepare an insert statement
+    $sql = "INSERT INTO users (emri, mbiemri, username, password, roli) VALUES (?, ?, ?, ?, ?)";
+
+    if ($stmt = $conn->prepare($sql)) {
+        // Bind variables to the prepared statement as parameters
+        $stmt->bind_param("sssss", $param_emri, $param_mbiemri, $param_username, $param_password, $param_roli);
+
+        // Set parameters
+        $param_emri = $emri;
+        $param_mbiemri = $mbiemri;
+        $param_username = $username;
+        $param_password = $hashed_password; // Use the hashed password
+        $param_roli = $roli;
+
+        // Attempt to execute the prepared statement
+        if ($stmt->execute()) {
+            // Redirect user to welcome page
+            header("location: Sign-in-page.php");
+        } else {
+            echo "Ju lutem provoni me vone...";
+        }
+
+        // Close statement
+        $stmt->close();
+    }
+
+    // Close connection
+    $conn->close();
+}
+?>
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +70,7 @@
 <div class="full-form">
     <div class="uppertext"></div>
     <div class="signup">
-        <form class="formstyle" action="get" onsubmit="return validateForm()">
+        <form class="formstyle" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" onsubmit="return validateForm()">
             
             <label class="user">
                 <b>Emri:</b>
@@ -22,7 +81,7 @@
                 <input id="mbiemri" type="text" name="Mbiemri" required>
                 <div class="error-message" id="mbiemriError"></div>
                 
-                <b>Username/Email :</b>
+                <b>Email :</b>
                 <input id="username" type="text" name="Username" required>
                 <div class="error-message" id="usernameError"></div>
             </label>
@@ -69,7 +128,7 @@
 
         emriError.innerText = '';
         mbiemriError.innerText = '';
-        usernameError.innerText = '';
+        usernameError.innerText= '';
         passwordError.innerText = '';
 
         if (!nameRegex.test(emri)) {
