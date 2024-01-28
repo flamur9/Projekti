@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 require_once 'dbconnect.php';
 require_once 'rolet.php';
@@ -73,6 +74,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
+=======
+>>>>>>> 6b96220c7b1061945195d98b3077dd382a3f256d
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,7 +93,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <b>WELCOME! SIGN IN HERE, AND NEVER MISS THE LATEST SPORT NEWS.</b>
         </div>
         <div class="signin">
+<<<<<<< HEAD
             <form class="formstyle" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return validateForm()">
+=======
+            <form class="formstyle" action="" method="post" onsubmit="return validateForm()">
+>>>>>>> 6b96220c7b1061945195d98b3077dd382a3f256d
                 <label class="user" for="">
                     <b>Email :</b>
                     <input id="username" type="text" name="Username" required>
@@ -113,7 +120,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <hr width="200px">
                 <div class="signuptext">
+<<<<<<< HEAD
                     <label for=""><b>Don't have an account? </b><a id="signup" href="signup.php">Sign up.</a></label>
+=======
+                    <label for=""><b>Don't have an account? </b><a id="signup" href="sign-up-page.html">Sign up.</a></label>
+>>>>>>> 6b96220c7b1061945195d98b3077dd382a3f256d
                 </div>
             </form>
         </div>
@@ -143,11 +154,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 return false;
             }
 
+<<<<<<< HEAD
             return true;
         }
     </script>
 
 
     
+=======
+         
+
+           
+            return false;
+        }
+    </script>
+
+<?php
+  if(isset($_POST['signin-button'])){
+    if(empty($_POST['username']) || empty($_POST['password'])){
+      echo "Please fill the required fields!";
+    }else{
+        //validate
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        include_once 'users.php';
+        $i=0;
+        
+        foreach($users as $user){
+          if($user['username'] == $username && $user['password'] == $password){
+            session_start();
+      
+            $_SESSION['username'] = $username;
+            $_SESSION['password'] = $password;
+            $_SESSION['role'] = $user['role'];
+            $_SESSION['loginTime'] = date("H:i:s");
+            header("location:main-page.php");
+            exit();
+          }else{
+            $i++;
+            if($i == sizeof($users)) {
+              echo "Incorrect Username or Password!";
+              exit();
+            }
+          }
+        }
+    }
+  }
+?>    
+>>>>>>> 6b96220c7b1061945195d98b3077dd382a3f256d
 </body>
 </html>

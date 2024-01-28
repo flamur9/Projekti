@@ -12,9 +12,13 @@
     
 </head>
 <body>  
+<<<<<<< HEAD
     
 
 
+=======
+    <?php
+>>>>>>> 6b96220c7b1061945195d98b3077dd382a3f256d
         <div>
         <div class="header">
                 <div class="text1">
@@ -218,9 +222,13 @@
                     </div>
                 </div>
                 </div>
+<<<<<<< HEAD
         
           
                 
                 
+=======
+                ?>
+>>>>>>> 6b96220c7b1061945195d98b3077dd382a3f256d
 </body>
 </html>
