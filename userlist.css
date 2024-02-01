@@ -1,0 +1,85 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(dashboardbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userdashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    color: white;
+    border: 3px solid white;
+    margin-top: 150px;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin: 50px;
+    text-align: flex-start;
+    justify-content: center;
+}
+.user-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.user-list-item button {
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+}
+
+.go-back-button{
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+}
+
+.go-back-button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user-list-item {
+    margin-bottom: 10px;
+}
+
+.user-list-item button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s ease;
+}
